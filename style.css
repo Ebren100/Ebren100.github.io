@@ -1,0 +1,63 @@
+/* Mind Blown's own colours (src/styles.css in the game) */
+:root {
+  --bg: #2c3e50;
+  --text: #ebf0f1;
+  --muted: #beb3c7;
+  --link: #ffb74d;
+  --rule: #34495e;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+body { margin: 0; background: var(--bg); }
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 48px 16px 64px;
+}
+
+h1, h2 {
+  font-family: 'Segoe UI Black', 'Arial Black', Arial, sans-serif;
+  line-height: 1.15;
+  margin: 0;
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.3rem; margin: 2.25rem 0 0.5rem; }
+
+p { margin: 0.6rem 0; }
+
+a { color: var(--link); text-underline-offset: 0.15em; }
+a:hover { text-decoration-thickness: 2px; }
+
+.muted { color: var(--muted); }
+
+.game {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-top: 2.25rem;
+}
+
+.game img { flex: none; width: 96px; height: 96px; }
+.game h2 { margin-top: 0.25rem; }
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 2px solid var(--rule);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 26rem) {
+  .game { flex-direction: column; gap: 12px; }
+  .game img { width: 80px; height: 80px; }
+}
